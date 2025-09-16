@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Document</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #080808;
+        }
+
+        .container {
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .topbar {
+            width: 80vw;
+            display: flex;
+            justify-content: space-between;
+            gap: 5rem;
+            background-color: #1B1B1B;
+            padding: 1rem 4rem;
+            border-radius: 0 0 10px 10px;
+        }
+
+        .topbar .nav {
+            display: flex;
+            width: 100%;
+            justify-content: space-between;
+            gap: 2.5rem;
+        }
+
+        .topbar .nav a {
+            color: #9C9C9C;
+            text-decoration: none;
+            font-size: 14px;
+            font-family: "IBM Plex Mono", monospace;
+            transition: color 0.3s;
+        }
+
+        .topbar .nav a:hover {
+            color: white;
+            text-decoration: underline;
+            text-decoration-thickness: 2px;
+        }
+
+        .topbar .social {
+            display: flex;
+            justify-content: space-between;
+            gap: 1rem;
+        }
+
+        .topbar .social a {
+            color: white;
+            text-decoration: none;
+            font-size: 20px;
+            color: #9C9C9C;
+            transition: color 0.3s;
+        }
+
+        .topbar .social a:hover {
+            color: white;
+        }
+
+        .content {
+            width: 60%;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            gap: 2rem;
+        }
+
+        .content .content-text {
+            width: 100%;
+            color: white;
+            font-family: "IBM Plex Mono", monospace;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .content .content-text .content-title {
+            font-family: "Raleway", sans-serif;
+        }
+
+        .content .content-text .content-subtitle {
+            color: #9C9C9C;
+        }
+
+        .content-text h1 {
+            margin: 0;
+        }
+
+        .content .content-logo {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+        }
+
+        .content .content-logo img {
+            width: 300px;
+            height: 300px;
+            border-radius: 100%;
+            object-fit: cover;
+        }
+
+        .content-button {
+            width: 75%;
+            display: flex;
+            justify-content: center;
+            gap: 0.5rem;
+            background-color: #3F8E00;
+            color: white;
+            border: none;
+            padding: 1rem 1.5rem;
+            border-radius: 5px;
+            font-family: "IBM Plex Mono", monospace;
+            cursor: pointer;
+            transition: background-color 0.3s, color 0.3s;
+        }
+
+        .content-button:hover {
+            background-color: #306b00;
+        }
+
+        .content-button:hover .btn-arrow {
+            transform: translateX(5px);
+            transition: transform 0.3s;
+        }
+
+        .footer {
+            width: 60%;
+            height: 150px;
+            display: flex;
+            flex-direction: column;
+            color: white;
+            font-family: "IBM Plex Mono", monospace;
+        }
+
+        .footer-company {
+            display: flex;
+            justify-content: space-between;
+            gap: 2rem;
+            margin-top: 1rem;
+        }
+        .logo-container {
+            width: 100px;
+            height: 50px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: 1px solid;
+            border-color: #1B1B1B;
+            border-radius: 5px;
+            padding: 0.25rem 2.5rem;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="topbar">
+            <div class="nav">
+                <a href="#">Home</a>
+                <a href="#">Case Studies</a>
+                <a href="#">Testimonials</a>
+                <a href="#">Recent work</a>
+                <a href="#">Get In Touch</a>
+            </div>
+            <div class="social">
+                <a href="#">
+                    <i class="fa-brands fa-linkedin"></i>
+                </a>
+                <a href="#">
+                    <i class="fa-brands fa-behance"></i>
+                </a>
+                <a href="#">
+                    <i class="fa-brands fa-twitter"></i>
+                </a>
+            </div>
+        </div>
+        <div class="content">
+            <div class="content-text">
+                <h1 class="content-title">
+                    Supanat Chantrapat
+                </h1>
+                <p class="content-subtitle">
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Molestiae maxime dolorem dolor, labore
+                    fugiat quia sunt corrupti pariatur tenetur. Voluptatum ipsa, impedit nisi quam unde ea commodi
+                    dignissimos debitis sapiente!
+                </p>
+                <button class="content-button">
+                    <span>Let's get started</span>
+                    <span class="btn-arrow">&gt;</span>
+                </button>
+            </div>
+            <div class="content-logo">
+                <img src="./images/me.jpg" alt="Profile">
+            </div>
+        </div>
+        <div class="footer">
+            <div>
+                Worked with
+            </div>
+            <div class="footer-company">
+                <span class="logo-container">
+                    <img src="./images/clickup.png" alt="Clickup">
+                </span>
+                <span class="logo-container">
+                    <img src="./images/dropbox.png" alt="Dropbox">
+                </span>
+                <span class="logo-container">
+                    <img src="./images/paychex.png" alt="PAYCHEX">
+                </span>
+                <span class="logo-container">
+                    <img src="./images/elastic.png" alt="elastic">
+                </span>
+                <span class="logo-container">
+                    <img src="./images/stripe.png" alt="stripe">
+                </span>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
